@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the updateSettingsButton function from the settings_page library, for the Dart programming language.">
+  <title>updateSettingsButton function - settings_page library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">smartpatch_connector_app</a></li>
+    <li><a href="../pages_settings_page/pages_settings_page-library.html">settings_page</a></li>
+    <li class="self-crumb">updateSettingsButton function</li>
+  </ol>
+  <div class="self-name">updateSettingsButton</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-function">updateSettingsButton</span> function 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    <section class="multi-line-signature">
+        
+
+<span class="returntype">void</span>
+<span class="name ">updateSettingsButton</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="updateSettingsButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span>, </span></li>
+<li><span class="parameter" id="updateSettingsButton-param-formKey"><span class="type-annotation">dynamic</span> <span class="parameter-name">formKey</span>, </span></li>
+<li><span class="parameter" id="updateSettingsButton-param-chosenUrl"><span class="type-annotation">dynamic</span> <span class="parameter-name">chosenUrl</span>, </span></li>
+<li><span class="parameter" id="updateSettingsButton-param-chosenUsername"><span class="type-annotation">dynamic</span> <span class="parameter-name">chosenUsername</span>, </span></li>
+<li><span class="parameter" id="updateSettingsButton-param-chosenPassword"><span class="type-annotation">dynamic</span> <span class="parameter-name">chosenPassword</span>, </span></li>
+<li><span class="parameter" id="updateSettingsButton-param-chosenPatientMaximum"><span class="type-annotation">dynamic</span> <span class="parameter-name">chosenPatientMaximum</span>, </span></li>
+<li><span class="parameter" id="updateSettingsButton-param-chosenUpdaterId"><span class="type-annotation">dynamic</span> <span class="parameter-name">chosenUpdaterId</span></span></li>
+</ol>)
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Updates the SharedPreferences for all Settings that were updated if they are valid.</p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">void updateSettingsButton(context, formKey, chosenUrl, chosenUsername,
+    chosenPassword, chosenPatientMaximum, chosenUpdaterId) async {
+  if (formKey.currentState!.validate()) {
+    await addStringToSharedPreferences(&#39;url&#39;, chosenUrl.text);
+    if (chosenUsername.text != &#39;&#39;) {
+      addStringToSharedPreferences(&#39;username&#39;, chosenUsername.text);
+    }
+    if (chosenPassword.text != &#39;&#39;) {
+      addStringToSharedPreferences(&#39;password&#39;, chosenPassword.text);
+    }
+    if (chosenPatientMaximum.text != &#39;&#39;) {
+      addIntToSharedPreferences(
+          &#39;maxPatients&#39;, int.parse(chosenPatientMaximum.text));
+    }
+    Navigator.pop(context);
+  }
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">smartpatch_connector_app</a></li>
+  <li><a href="../pages_settings_page/pages_settings_page-library.html">settings_page</a></li>
+  <li class="self-crumb">updateSettingsButton function</li>
+</ol>
+
+
+    <h5>settings_page library</h5>
+    <ol>
+  <li class="section-title"><a href="../pages_settings_page/pages_settings_page-library.html#classes">Classes</a></li>
+  <li><a href="../pages_settings_page/SettingsPage-class.html">SettingsPage</a></li>
+
+
+
+
+
+  <li class="section-title"><a href="../pages_settings_page/pages_settings_page-library.html#functions">Functions</a></li>
+  <li><a href="../pages_settings_page/formValidator.html">formValidator</a></li>
+  <li><a href="../pages_settings_page/updateSettingsButton.html">updateSettingsButton</a></li>
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    smartpatch_connector_app
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

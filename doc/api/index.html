@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 4.1.0">
+  <meta name="description" content="smartpatch_connector_app API docs, for the Dart programming language.">
+  <title>smartpatch_connector_app - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href=""
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">smartpatch_connector_app package</li>
+  </ol>
+  <div class="self-name">smartpatch_connector_app</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="smartpatch-connector-app">SmartPatch Connector App</h1>
+<h2 id="quick-overview">Quick overview</h2>
+<p>The <strong>SmartPatch Connector App</strong> is a crossplatform application designed to easily connect and disconnect SmartPatches from patients.
+The app is available on iOs and Android. It is a part of the SmartPatch System.</p>
+<p>To use the app on Android simply download its <a href="SmartPatch_Connector_App_v_1_0_0.apk"><strong>APK</strong></a> file from this repo to your Android phone and install it.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="ios">iOS</h3>
+<h4 id="test-the-app-on-ios">Test the App on iOS</h4>
+<p>To test the application on iOS, follow this <a href="https://medium.com/front-end-weekly/how-to-test-your-flutter-ios-app-on-your-ios-device-75924bfd75a8">guide</a>.
+This is the only way to test the app on a real device on iOs without an <a href="https://developer.apple.com/programs/">Apple Developer program</a> membership.</p>
+<h4 id="release">Release</h4>
+<p>If you want to release the app on iOS, use this <a href="https://docs.flutter.dev/deployment/ios">official guide</a>.</p>
+<h3 id="android">Android</h3>
+<h4 id="beta-distribution">Beta Distribution</h4>
+<p>To use the  application on Android, download the <a href="SmartPatch_Connector_App_v_1_0_0.apk">SmartPatch_Connector_App_v_1_0_0.apk</a> file to your Android Phone and install it.</p>
+<h4 id="release-2">Release</h4>
+<p>If you want to officially release the app on Android, use this <a href="https://docs.flutter.dev/deployment/android">official guide</a>.</p>
+<h2 id="use-the-app">Use the app</h2>
+<h3 id="connect">Connect</h3>
+<p>Scan a SmartPatch QR code <strong>and</strong> select a patient from your patient list to map them to each other. You can also add a new patient if the patient to connect to is not already on the list. After connecting you shold now be see the sensor data for this  SmartPatch in the SmartPatch UI when selecting the patient.
+This should always be done when a SmartPatch is getting attached to a patient.</p>
+<h3 id="disconnect">Disconnect</h3>
+<p>Scan a SmartPatch QR code <strong>or</strong> select a patient from your patient list to disconnect his currently connected SmartPatch. This should always be done when a SmartPatch is removed from a patient.</p>
+<h2 id="further-documentation">Further documentation</h2>
+<p>For further documentation on the SmartPatch System consider looking at the code documentation. It can found in the <code>doc/api</code> directory of this repository. Please clone the repository and then open <code>index.html</code> in said repository.</p>
+<h2 id="what-is-the-smartpatch-system">What is the SmartPatch System?</h2>
+<p>The SmartPatch System includes a SmartPatch for acquiring vital sensor data and a supporting ecosystem consisting of a <a href="https://gitlab.ethz.ch/pbl/hs2021/flagship-smart-patch-2021/base-station-v1">Basestation Software</a> designed to acquire the Sensor Data on a Basestation device (Raspberry Pi) and publishing it to a Thingsboard Server.
+Further it includes a <a href="https://thingsboard.io/">Thingsboard</a> server setup to display the acquired data. And the <a href="https://gitlab.ethz.ch/pbl/hs2021/flagship-smart-patch-2021/connector-app-v1">SmartPatch Connector App</a> available for iOS and Android, that makes it easy to connect SmartPatches and assign them to a patient.</p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="connect_page">
+  <span class="name"><a href="pages_connect_page/pages_connect_page-library.html">connect_page</a></span> 
+
+</dt>
+<dd>Contains options to scan a QR-code and select a patient from <code>patientData</code>
+or to add a new patient to the Thingsboard database and to <code>patientData</code>
+and connect a SmartPatch using the two selected values. 
+</dd>
+
+          <dt id="default_settings">
+  <span class="name"><a href="functionality_default_settings/functionality_default_settings-library.html">default_settings</a></span> 
+
+</dt>
+<dd>Default Settings for the SmartPatch Connector App. 
+</dd>
+
+          <dt id="disconnect_page">
+  <span class="name"><a href="pages_disconnect_page/pages_disconnect_page-library.html">disconnect_page</a></span> 
+
+</dt>
+<dd>Contains a possibility to scan a MAC address QR-code or select a patient
+from the patient list to disconnect a SmartPatch. 
+</dd>
+
+          <dt id="functionality">
+  <span class="name"><a href="functionality_functionality/functionality_functionality-library.html">functionality</a></span> 
+
+</dt>
+<dd>Definition of all helper functions that get used in multiple pages. 
+</dd>
+
+          <dt id="generated_plugin_registrant">
+  <span class="name"><a href="generated_plugin_registrant/generated_plugin_registrant-library.html">generated_plugin_registrant</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="home_page">
+  <span class="name"><a href="pages_home_page/pages_home_page-library.html">home_page</a></span> 
+
+</dt>
+<dd>The app home page with buttons to connect, disconnect, open the Thingsboard UI
+and go to the Settings page. 
+</dd>
+
+          <dt id="main">
+  <span class="name"><a href="main/main-library.html">main</a></span> 
+
+</dt>
+<dd>Run flutter app. 
+</dd>
+
+          <dt id="new_patient_page">
+  <span class="name"><a href="pages_new_patient_page/pages_new_patient_page-library.html">new_patient_page</a></span> 
+
+</dt>
+<dd>Page provides the possibility to add a new patient to <code>patientData</code>
+and to the Thingsboard database. 
+</dd>
+
+          <dt id="pages_export">
+  <span class="name"><a href="pages_pages_export/pages_pages_export-library.html">pages_export</a></span> 
+
+</dt>
+<dd>Exports all Pages at once. 
+</dd>
+
+          <dt id="qr_scanner_page">
+  <span class="name"><a href="pages_qr_scanner_page/pages_qr_scanner_page-library.html">qr_scanner_page</a></span> 
+
+</dt>
+<dd>Allows users to scan QR-codes and returns the <code>result</code>.
+Heavily inspired from <code>qr_code_scanner</code> documentation example. 
+</dd>
+
+          <dt id="settings_page">
+  <span class="name"><a href="pages_settings_page/pages_settings_page-library.html">settings_page</a></span> 
+
+</dt>
+<dd>Allows user to set new Settings for the app.
+Settings are applied immediately after changing them. 
+</dd>
+
+          <dt id="success_page">
+  <span class="name"><a href="pages_success_page/pages_success_page-library.html">success_page</a></span> 
+
+</dt>
+<dd>Page that gets shown after a connect or disconnect was sent. 
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li class="self-crumb">smartpatch_connector_app package</li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">smartpatch_connector_app</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="pages_connect_page/pages_connect_page-library.html">connect_page</a></li>
+      <li><a href="functionality_default_settings/functionality_default_settings-library.html">default_settings</a></li>
+      <li><a href="pages_disconnect_page/pages_disconnect_page-library.html">disconnect_page</a></li>
+      <li><a href="functionality_functionality/functionality_functionality-library.html">functionality</a></li>
+      <li><a href="generated_plugin_registrant/generated_plugin_registrant-library.html">generated_plugin_registrant</a></li>
+      <li><a href="pages_home_page/pages_home_page-library.html">home_page</a></li>
+      <li><a href="main/main-library.html">main</a></li>
+      <li><a href="pages_new_patient_page/pages_new_patient_page-library.html">new_patient_page</a></li>
+      <li><a href="pages_pages_export/pages_pages_export-library.html">pages_export</a></li>
+      <li><a href="pages_qr_scanner_page/pages_qr_scanner_page-library.html">qr_scanner_page</a></li>
+      <li><a href="pages_settings_page/pages_settings_page-library.html">settings_page</a></li>
+      <li><a href="pages_success_page/pages_success_page-library.html">success_page</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    smartpatch_connector_app
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

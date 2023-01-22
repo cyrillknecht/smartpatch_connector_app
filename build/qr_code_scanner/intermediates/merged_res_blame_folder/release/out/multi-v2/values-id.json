@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/qr_code_scanner/intermediates/incremental/mergeReleaseResources/merged.dir/values-id/values-id.xml",
+            "map": [
+                {
+                    "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/6f13b3a484d5e5d0cbb22f042246cf64/transformed/jetified-zxing-android-embedded-4.1.0/res/values-id/values-id.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,293",
+                        "endColumns": "58,46,131,108",
+                        "endOffsets": "109,156,288,397"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/qr_code_scanner/intermediates/res/merged/release/values-id/values-id.xml",
+            "map": [
+                {
+                    "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/6f13b3a484d5e5d0cbb22f042246cf64/transformed/jetified-zxing-android-embedded-4.1.0/res/values-id/values-id.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,293",
+                        "endColumns": "58,46,131,108",
+                        "endOffsets": "109,156,288,397"
+                    }
+                }
+            ]
+        }
+    ]
+}

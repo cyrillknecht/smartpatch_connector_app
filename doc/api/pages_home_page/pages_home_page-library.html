@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="home_page library API docs, for the Dart programming language.">
+  <title>home_page library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">smartpatch_connector_app</a></li>
+    <li class="self-crumb">home_page library</li>
+  </ol>
+  <div class="self-name">home_page</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-library">home_page</span> library 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>The app home page with buttons to connect, disconnect, open the Thingsboard UI
+and go to the Settings page.</p>
+</section>
+
+
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="HomePage">
+  <span class="name "><a href="../pages_home_page/HomePage-class.html">HomePage</a></span> 
+
+</dt>
+<dd>
+   
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+
+    <section class="summary offset-anchor" id="functions">
+      <h2>Functions</h2>
+
+      <dl class="callables">
+        <dt id="connectButton" class="callable">
+  <span class="name"><a href="../pages_home_page/connectButton.html">connectButton</a></span><span class="signature">(<wbr><span class="parameter" id="connectButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Navigates to the <a href="../pages_connect_page/pages_connect_page-library.html">connect_page</a> after updating the settings
+and fetchings a list of patients. 
+  
+
+</dd>
+
+        <dt id="disconnectButton" class="callable">
+  <span class="name"><a href="../pages_home_page/disconnectButton.html">disconnectButton</a></span><span class="signature">(<wbr><span class="parameter" id="disconnectButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Navigates to the <a href="../pages_disconnect_page/pages_disconnect_page-library.html">disconnect_page</a> after updating the settings
+and fetching a list of patients. 
+  
+
+</dd>
+
+        <dt id="getPatientList" class="callable">
+  <span class="name"><a href="../pages_home_page/getPatientList.html">getPatientList</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.15.0/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.15.0/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.15.0/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.dart.dev/stable/2.15.0/dart-core/String-class.html">String</a></span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Returns a current dict of patients with their connected MAC address from the Thingsboard database. 
+  
+
+</dd>
+
+        <dt id="goToThingsboardButton" class="callable">
+  <span class="name"><a href="../pages_home_page/goToThingsboardButton.html">goToThingsboardButton</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Opens an in-app browser window with the Thingsboard UI. 
+  
+
+</dd>
+
+        <dt id="settingsButton" class="callable">
+  <span class="name"><a href="../pages_home_page/settingsButton.html">settingsButton</a></span><span class="signature">(<wbr><span class="parameter" id="settingsButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Navigates to the <a href="../pages_settings_page/pages_settings_page-library.html">settings_page</a>. 
+  
+
+</dd>
+
+        <dt id="updateSettings" class="callable">
+  <span class="name"><a href="../pages_home_page/updateSettings.html">updateSettings</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Updates all app settings from SharedPreferences. 
+  
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">smartpatch_connector_app</a></li>
+  <li class="self-crumb">home_page library</li>
+</ol>
+
+
+    <h5><span class="package-name">smartpatch_connector_app</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="../pages_connect_page/pages_connect_page-library.html">connect_page</a></li>
+      <li><a href="../functionality_default_settings/functionality_default_settings-library.html">default_settings</a></li>
+      <li><a href="../pages_disconnect_page/pages_disconnect_page-library.html">disconnect_page</a></li>
+      <li><a href="../functionality_functionality/functionality_functionality-library.html">functionality</a></li>
+      <li><a href="../generated_plugin_registrant/generated_plugin_registrant-library.html">generated_plugin_registrant</a></li>
+      <li><a href="../pages_home_page/pages_home_page-library.html">home_page</a></li>
+      <li><a href="../main/main-library.html">main</a></li>
+      <li><a href="../pages_new_patient_page/pages_new_patient_page-library.html">new_patient_page</a></li>
+      <li><a href="../pages_pages_export/pages_pages_export-library.html">pages_export</a></li>
+      <li><a href="../pages_qr_scanner_page/pages_qr_scanner_page-library.html">qr_scanner_page</a></li>
+      <li><a href="../pages_settings_page/pages_settings_page-library.html">settings_page</a></li>
+      <li><a href="../pages_success_page/pages_success_page-library.html">success_page</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <h5>home_page library</h5>
+    <ol>
+  <li class="section-title"><a href="../pages_home_page/pages_home_page-library.html#classes">Classes</a></li>
+  <li><a href="../pages_home_page/HomePage-class.html">HomePage</a></li>
+
+
+
+
+
+  <li class="section-title"><a href="../pages_home_page/pages_home_page-library.html#functions">Functions</a></li>
+  <li><a href="../pages_home_page/connectButton.html">connectButton</a></li>
+  <li><a href="../pages_home_page/disconnectButton.html">disconnectButton</a></li>
+  <li><a href="../pages_home_page/getPatientList.html">getPatientList</a></li>
+  <li><a href="../pages_home_page/goToThingsboardButton.html">goToThingsboardButton</a></li>
+  <li><a href="../pages_home_page/settingsButton.html">settingsButton</a></li>
+  <li><a href="../pages_home_page/updateSettings.html">updateSettings</a></li>
+
+
+
+</ol>
+
+  </div><!--/sidebar-offcanvas-right-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    smartpatch_connector_app
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,4 @@
+#Mon Jan 03 16:59:33 CET 2022
+base.0=/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/412c1761824ad6e8b8ce8a8fc6700ffd/transformed/core-1.1.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/412c1761824ad6e8b8ce8a8fc6700ffd/transformed/core-1.1.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/412c1761824ad6e8b8ce8a8fc6700ffd/transformed/core-1.1.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/412c1761824ad6e8b8ce8a8fc6700ffd/transformed/core-1.1.0/res/layout-v21/notification_action_tombstone.xml"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/qr_code_scanner/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/481056c481460444d2d744bc3199ebff/transformed/appcompat-1.2.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/qr_code_scanner/intermediates/res/merged/release/drawable-v21/notification_action_background.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/059d074b8f8fa4aec44d6fc39dc4ce86/transformed/core-1.3.0/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/qr_code_scanner/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/481056c481460444d2d744bc3199ebff/transformed/appcompat-1.2.0/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/qr_code_scanner/intermediates/res/merged/release/drawable-v21/abc_list_divider_material.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/481056c481460444d2d744bc3199ebff/transformed/appcompat-1.2.0/res/drawable-v21/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/qr_code_scanner/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/481056c481460444d2d744bc3199ebff/transformed/appcompat-1.2.0/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/qr_code_scanner/intermediates/res/merged/release/drawable-v21/abc_dialog_material_background.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/481056c481460444d2d744bc3199ebff/transformed/appcompat-1.2.0/res/drawable-v21/abc_dialog_material_background.xml"
+    }
+]

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the addNewPatient function from the new_patient_page library, for the Dart programming language.">
+  <title>addNewPatient function - new_patient_page library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">smartpatch_connector_app</a></li>
+    <li><a href="../pages_new_patient_page/pages_new_patient_page-library.html">new_patient_page</a></li>
+    <li class="self-crumb">addNewPatient function</li>
+  </ol>
+  <div class="self-name">addNewPatient</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-function">addNewPatient</span> function 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    <section class="multi-line-signature">
+        
+
+<span class="returntype"><a href="https://api.dart.dev/stable/2.15.0/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+<span class="name ">addNewPatient</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="addNewPatient-param-patientName"><span class="type-annotation">dynamic</span> <span class="parameter-name">patientName</span></span></li>
+</ol>)
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Adds a new patient with <code>patientName</code> to the thingsboard database
+and sets his  macAddress attribute to disconnected.</p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">Future&lt;void&gt; addNewPatient(patientName) async {
+  try {
+    &#47;&#47; Create instance of ThingsBoard API Client
+    var tbClient = ThingsboardClient(url);
+
+    &#47;&#47; Perform login with default Tenant Administrator credentials
+    await tbClient.login(LoginRequest(user, password));
+    &#47;&#47; Construct device object
+    Device? device = Device(patientName, deviceType);
+    device.additionalInfo = {
+      &#39;description&#39;: &#39;Patient provided with SmartPatch Connector App.&#39;
+    };
+
+    &#47;&#47; Add device
+    await tbClient
+        .getDeviceService()
+        .saveDevice(device, accessToken: patientName);
+
+    &#47;&#47; Construct Raw Data device object
+    Device? deviceRaw = Device(patientName + &#39; Raw Data&#39;, &#39;Raw&#39;);
+    device.additionalInfo = {
+      &#39;description&#39;: &#39;Patient provided with SmartPatch Connector App.&#39;
+    };
+
+    &#47;&#47; Add Raw Data device
+    await tbClient
+        .getDeviceService()
+        .saveDevice(deviceRaw, accessToken: patientName + &#39; Raw Data&#39;);
+
+    &#47;&#47; Finally perform logout to clear credentials
+    await tbClient.logout();
+  } catch (e, s) {
+    print(&#39;Error: $e&#39;);
+    print(&#39;Stack: $s&#39;);
+  }
+  &#47;&#47; Set the MAC Address to disconnected because patient does not have a SmartPatch yet
+  disconnectSmartPatch(patientName, &quot;disconnected&quot;);
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">smartpatch_connector_app</a></li>
+  <li><a href="../pages_new_patient_page/pages_new_patient_page-library.html">new_patient_page</a></li>
+  <li class="self-crumb">addNewPatient function</li>
+</ol>
+
+
+    <h5>new_patient_page library</h5>
+    <ol>
+  <li class="section-title"><a href="../pages_new_patient_page/pages_new_patient_page-library.html#classes">Classes</a></li>
+  <li><a href="../pages_new_patient_page/AddNewPatientPage-class.html">AddNewPatientPage</a></li>
+
+
+
+
+
+  <li class="section-title"><a href="../pages_new_patient_page/pages_new_patient_page-library.html#functions">Functions</a></li>
+  <li><a href="../pages_new_patient_page/addNewPatient.html">addNewPatient</a></li>
+  <li><a href="../pages_new_patient_page/addNewPatientButton.html">addNewPatientButton</a></li>
+  <li><a href="../pages_new_patient_page/formValidator.html">formValidator</a></li>
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    smartpatch_connector_app
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

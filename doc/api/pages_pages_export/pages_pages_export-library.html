@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="pages_export library API docs, for the Dart programming language.">
+  <title>pages_export library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">smartpatch_connector_app</a></li>
+    <li class="self-crumb">pages_export library</li>
+  </ol>
+  <div class="self-name">pages_export</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-library">pages_export</span> library 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>Exports all Pages at once.</p>
+</section>
+
+
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="AddNewPatientPage">
+  <span class="name "><a href="../pages_new_patient_page/AddNewPatientPage-class.html">AddNewPatientPage</a></span> 
+
+</dt>
+<dd>
+   
+</dd>
+
+        <dt id="ConnectPage">
+  <span class="name "><a href="../pages_connect_page/ConnectPage-class.html">ConnectPage</a></span> 
+
+</dt>
+<dd>
+   
+</dd>
+
+        <dt id="DisconnectPage">
+  <span class="name "><a href="../pages_disconnect_page/DisconnectPage-class.html">DisconnectPage</a></span> 
+
+</dt>
+<dd>
+   
+</dd>
+
+        <dt id="HomePage">
+  <span class="name "><a href="../pages_home_page/HomePage-class.html">HomePage</a></span> 
+
+</dt>
+<dd>
+   
+</dd>
+
+        <dt id="QRScannerPage">
+  <span class="name "><a href="../pages_qr_scanner_page/QRScannerPage-class.html">QRScannerPage</a></span> 
+
+</dt>
+<dd>
+   
+</dd>
+
+        <dt id="SuccessPage">
+  <span class="name "><a href="../pages_success_page/SuccessPage-class.html">SuccessPage</a></span> 
+
+</dt>
+<dd>
+   
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+
+    <section class="summary offset-anchor" id="functions">
+      <h2>Functions</h2>
+
+      <dl class="callables">
+        <dt id="addNewPatient" class="callable">
+  <span class="name"><a href="../pages_new_patient_page/addNewPatient.html">addNewPatient</a></span><span class="signature">(<wbr><span class="parameter" id="addNewPatient-param-patientName"><span class="type-annotation">dynamic</span> <span class="parameter-name">patientName</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.15.0/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Adds a new patient with <code>patientName</code> to the thingsboard database
+and sets his  macAddress attribute to disconnected. 
+  
+
+</dd>
+
+        <dt id="addNewPatientButton" class="callable">
+  <span class="name"><a href="../pages_new_patient_page/addNewPatientButton.html">addNewPatientButton</a></span><span class="signature">(<wbr><span class="parameter" id="addNewPatientButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span>, </span><span class="parameter" id="addNewPatientButton-param-formKey"><span class="type-annotation">dynamic</span> <span class="parameter-name">formKey</span>, </span><span class="parameter" id="addNewPatientButton-param-chosenName"><span class="type-annotation">dynamic</span> <span class="parameter-name">chosenName</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Adds a new patient with <code>chosenName</code> to the Thingsboard database
+and returns to <a href="../pages_connect_page/pages_connect_page-library.html">connect_page</a>. 
+  
+
+</dd>
+
+        <dt id="connectButton" class="callable">
+  <span class="name"><a href="../pages_home_page/connectButton.html">connectButton</a></span><span class="signature">(<wbr><span class="parameter" id="connectButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Navigates to the <a href="../pages_connect_page/pages_connect_page-library.html">connect_page</a> after updating the settings
+and fetchings a list of patients. 
+  
+
+</dd>
+
+        <dt id="connectSmartPatch" class="callable">
+  <span class="name"><a href="../pages_connect_page/connectSmartPatch.html">connectSmartPatch</a></span><span class="signature">(<wbr><span class="parameter" id="connectSmartPatch-param-patientName"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.15.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">patientName</span>, </span><span class="parameter" id="connectSmartPatch-param-macAddress"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.15.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">macAddress</span>, </span><span class="parameter" id="connectSmartPatch-param-patientData"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.15.0/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.15.0/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.dart.dev/stable/2.15.0/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">patientData</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.15.0/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Changes <code>patientName</code>'s  macaddress attribute on thingsboard to <code>macAddress</code>.
+First cleans up the patients previous connections. 
+  
+
+</dd>
+
+        <dt id="connectSmartPatchButton" class="callable">
+  <span class="name"><a href="../pages_connect_page/connectSmartPatchButton.html">connectSmartPatchButton</a></span><span class="signature">(<wbr><span class="parameter" id="connectSmartPatchButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span>, </span><span class="parameter" id="connectSmartPatchButton-param-formKey"><span class="type-annotation">dynamic</span> <span class="parameter-name">formKey</span>, </span><span class="parameter" id="connectSmartPatchButton-param-selectedMacAddress"><span class="type-annotation">dynamic</span> <span class="parameter-name">selectedMacAddress</span>, </span><span class="parameter" id="connectSmartPatchButton-param-selectedPatient"><span class="type-annotation">dynamic</span> <span class="parameter-name">selectedPatient</span>, </span><span class="parameter" id="connectSmartPatchButton-param-patientData"><span class="type-annotation">dynamic</span> <span class="parameter-name">patientData</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Connects a SmartPatch. <a href="../pages_connect_page/connectSmartPatchButton.html">[...]</a>
+  
+
+</dd>
+
+        <dt id="disconnectButton" class="callable">
+  <span class="name"><a href="../pages_home_page/disconnectButton.html">disconnectButton</a></span><span class="signature">(<wbr><span class="parameter" id="disconnectButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Navigates to the <a href="../pages_disconnect_page/pages_disconnect_page-library.html">disconnect_page</a> after updating the settings
+and fetching a list of patients. 
+  
+
+</dd>
+
+        <dt id="disconnectSmartPatchButton" class="callable">
+  <span class="name"><a href="../pages_disconnect_page/disconnectSmartPatchButton.html">disconnectSmartPatchButton</a></span><span class="signature">(<wbr><span class="parameter" id="disconnectSmartPatchButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span>, </span><span class="parameter" id="disconnectSmartPatchButton-param-formKey"><span class="type-annotation">dynamic</span> <span class="parameter-name">formKey</span>, </span><span class="parameter" id="disconnectSmartPatchButton-param-selectedPatient"><span class="type-annotation">dynamic</span> <span class="parameter-name">selectedPatient</span>, </span><span class="parameter" id="disconnectSmartPatchButton-param-selectedMacAddress"><span class="type-annotation">dynamic</span> <span class="parameter-name">selectedMacAddress</span>, </span><span class="parameter" id="disconnectSmartPatchButton-param-patientData"><span class="type-annotation">dynamic</span> <span class="parameter-name">patientData</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Disconnects a SmartPatch associated with <code>selectedPatient</code> or <code>selectedMacAddress</code>. 
+  
+
+</dd>
+
+        <dt id="formValidator" class="callable">
+  <span class="name"><a href="../pages_new_patient_page/formValidator.html">formValidator</a></span><span class="signature">(<wbr><span class="parameter" id="formValidator-param-text"><span class="type-annotation">dynamic</span> <span class="parameter-name">text</span>, </span><span class="parameter" id="formValidator-param-patientData"><span class="type-annotation">dynamic</span> <span class="parameter-name">patientData</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Validates that <code>text</code> is a patient name. 
+  
+
+</dd>
+
+        <dt id="getPatientList" class="callable">
+  <span class="name"><a href="../pages_home_page/getPatientList.html">getPatientList</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.15.0/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.15.0/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.15.0/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.dart.dev/stable/2.15.0/dart-core/String-class.html">String</a></span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Returns a current dict of patients with their connected MAC address from the Thingsboard database. 
+  
+
+</dd>
+
+        <dt id="goToThingsboardButton" class="callable">
+  <span class="name"><a href="../pages_home_page/goToThingsboardButton.html">goToThingsboardButton</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Opens an in-app browser window with the Thingsboard UI. 
+  
+
+</dd>
+
+        <dt id="returnToHomeButton" class="callable">
+  <span class="name"><a href="../pages_success_page/returnToHomeButton.html">returnToHomeButton</a></span><span class="signature">(<wbr><span class="parameter" id="returnToHomeButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Returns to the home page. 
+  
+
+</dd>
+
+        <dt id="scanQRCodeButton" class="callable">
+  <span class="name"><a href="../pages_connect_page/scanQRCodeButton.html">scanQRCodeButton</a></span><span class="signature">(<wbr><span class="parameter" id="scanQRCodeButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.15.0/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.15.0/dart-core/String-class.html">String</a>?</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Navigates to the <a href="../pages_qr_scanner_page/pages_qr_scanner_page-library.html">qr_scanner_page</a>. When the it returns, displays the selected
+<code>macAddress</code>. 
+  
+
+</dd>
+
+        <dt id="settingsButton" class="callable">
+  <span class="name"><a href="../pages_home_page/settingsButton.html">settingsButton</a></span><span class="signature">(<wbr><span class="parameter" id="settingsButton-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Navigates to the <a href="../pages_settings_page/pages_settings_page-library.html">settings_page</a>. 
+  
+
+</dd>
+
+        <dt id="updateSettings" class="callable">
+  <span class="name"><a href="../pages_home_page/updateSettings.html">updateSettings</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Updates all app settings from SharedPreferences. 
+  
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">smartpatch_connector_app</a></li>
+  <li class="self-crumb">pages_export library</li>
+</ol>
+
+
+    <h5><span class="package-name">smartpatch_connector_app</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="../pages_connect_page/pages_connect_page-library.html">connect_page</a></li>
+      <li><a href="../functionality_default_settings/functionality_default_settings-library.html">default_settings</a></li>
+      <li><a href="../pages_disconnect_page/pages_disconnect_page-library.html">disconnect_page</a></li>
+      <li><a href="../functionality_functionality/functionality_functionality-library.html">functionality</a></li>
+      <li><a href="../generated_plugin_registrant/generated_plugin_registrant-library.html">generated_plugin_registrant</a></li>
+      <li><a href="../pages_home_page/pages_home_page-library.html">home_page</a></li>
+      <li><a href="../main/main-library.html">main</a></li>
+      <li><a href="../pages_new_patient_page/pages_new_patient_page-library.html">new_patient_page</a></li>
+      <li><a href="../pages_pages_export/pages_pages_export-library.html">pages_export</a></li>
+      <li><a href="../pages_qr_scanner_page/pages_qr_scanner_page-library.html">qr_scanner_page</a></li>
+      <li><a href="../pages_settings_page/pages_settings_page-library.html">settings_page</a></li>
+      <li><a href="../pages_success_page/pages_success_page-library.html">success_page</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <h5>pages_export library</h5>
+    <ol>
+  <li class="section-title"><a href="../pages_pages_export/pages_pages_export-library.html#classes">Classes</a></li>
+  <li><a href="../pages_new_patient_page/AddNewPatientPage-class.html">AddNewPatientPage</a></li>
+  <li><a href="../pages_connect_page/ConnectPage-class.html">ConnectPage</a></li>
+  <li><a href="../pages_disconnect_page/DisconnectPage-class.html">DisconnectPage</a></li>
+  <li><a href="../pages_home_page/HomePage-class.html">HomePage</a></li>
+  <li><a href="../pages_qr_scanner_page/QRScannerPage-class.html">QRScannerPage</a></li>
+  <li><a href="../pages_success_page/SuccessPage-class.html">SuccessPage</a></li>
+
+
+
+
+
+  <li class="section-title"><a href="../pages_pages_export/pages_pages_export-library.html#functions">Functions</a></li>
+  <li><a href="../pages_new_patient_page/addNewPatient.html">addNewPatient</a></li>
+  <li><a href="../pages_new_patient_page/addNewPatientButton.html">addNewPatientButton</a></li>
+  <li><a href="../pages_home_page/connectButton.html">connectButton</a></li>
+  <li><a href="../pages_connect_page/connectSmartPatch.html">connectSmartPatch</a></li>
+  <li><a href="../pages_connect_page/connectSmartPatchButton.html">connectSmartPatchButton</a></li>
+  <li><a href="../pages_home_page/disconnectButton.html">disconnectButton</a></li>
+  <li><a href="../pages_disconnect_page/disconnectSmartPatchButton.html">disconnectSmartPatchButton</a></li>
+  <li><a href="../pages_new_patient_page/formValidator.html">formValidator</a></li>
+  <li><a href="../pages_home_page/getPatientList.html">getPatientList</a></li>
+  <li><a href="../pages_home_page/goToThingsboardButton.html">goToThingsboardButton</a></li>
+  <li><a href="../pages_success_page/returnToHomeButton.html">returnToHomeButton</a></li>
+  <li><a href="../pages_connect_page/scanQRCodeButton.html">scanQRCodeButton</a></li>
+  <li><a href="../pages_home_page/settingsButton.html">settingsButton</a></li>
+  <li><a href="../pages_home_page/updateSettings.html">updateSettings</a></li>
+
+
+
+</ol>
+
+  </div><!--/sidebar-offcanvas-right-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    smartpatch_connector_app
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

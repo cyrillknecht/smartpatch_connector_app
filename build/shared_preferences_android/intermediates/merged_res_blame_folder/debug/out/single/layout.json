@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/shared_preferences_android/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/412c1761824ad6e8b8ce8a8fc6700ffd/transformed/core-1.1.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/shared_preferences_android/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/412c1761824ad6e8b8ce8a8fc6700ffd/transformed/core-1.1.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/shared_preferences_android/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/412c1761824ad6e8b8ce8a8fc6700ffd/transformed/core-1.1.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/shared_preferences_android/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/412c1761824ad6e8b8ce8a8fc6700ffd/transformed/core-1.1.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/shared_preferences_android/intermediates/res/merged/debug/layout/custom_dialog.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/412c1761824ad6e8b8ce8a8fc6700ffd/transformed/core-1.1.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/cyrillknecht/Desktop/ Cyrill/ETH/7. Semester/BachelorProject/SmartPatch_Connector_App/smartpatch_connector_app/build/shared_preferences_android/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/cyrillknecht/.gradle/caches/transforms-3/412c1761824ad6e8b8ce8a8fc6700ffd/transformed/core-1.1.0/res/layout/notification_template_part_chronometer.xml"
+    }
+]

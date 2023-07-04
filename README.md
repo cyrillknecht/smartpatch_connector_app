@@ -1,7 +1,9 @@
 # SmartPatch Connector App
 
+<img src="assets/readme/Home_Page.png" alt="Home Page" width="300">
+
 ## Quick overview
-The **SmartPatch Connector App** is a crossplatform application designed to easily connect and disconnect SmartPatches from patients.
+The **SmartPatch Connector App** is a cross-platform application designed to easily connect and disconnect SmartPatches from patients.
 The app is available on iOs and Android. It is a part of the SmartPatch System.
 
 To use the app on Android simply download its [**APK**](SmartPatch_Connector_App_v_1_0_0.apk) file from this repo to your Android phone and install it.
